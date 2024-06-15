@@ -1,0 +1,76 @@
+body {
+    background-image: linear-gradient(90deg, burlywood, rgb(181, 140, 104), burlywood);
+    display: flex;
+    margin: 0;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}    
+
+h1 {
+    color: rgb(92, 66, 66);
+    text-shadow: 1px 1px wheat;
+    font-family: cursive;
+    
+}
+
+#Game {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-wrap: wrap;
+    flex-shrink: 1;
+}
+
+p {
+    font-weight: bold;
+    font-family: cursive;
+    color: white;
+    text-shadow: 2px 2px black;
+    font-size: x-large;
+}
+#name {
+    text-decoration: underline;
+    color: rgb(180, 17, 49);
+}
+
+#button {
+    font-size: x-large;
+    border-radius: 10%;
+    background-color: grey;
+    font-weight: bold;
+    color: white;
+    text-shadow: 1px 1px black;
+    font-family: cursive;
+}
+
+#button:hover {
+    background-color: silver;
+    color: red;
+}
+
+#Why {
+    text-align: center;
+    background-color: rgb(44, 31, 31);
+    color: rgb(153, 18, 45);
+    width: 50%;
+}
+
+#Dashboard {
+    display: flex;
+    width: 90%;
+    justify-content: space-around;
+    font-size: x-large;
+    font-weight: bold;
+    font-family: cursive;
+    flex-direction: row;
+}
+.play {
+    
+    font-style: italic;
+    color: brown;
+    text-shadow: 1px 1px black;
+}
