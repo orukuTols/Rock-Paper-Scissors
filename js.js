@@ -9,16 +9,18 @@ if(!(userName === " "))  {
 let buttonClick = document.querySelector("#button");
 
 
-buttonClicked = buttonClick.addEventListener("click", playRound);
+buttonClicked = buttonClick.addEventListener("click", Round);
 
 
  let Name = document.querySelector("#User");
+ let whyChoice = document.querySelector("#Why");
  Name.innerHTML = userName;
 
 let humanScore = 0;
 let computerScore = 0;
 
 let computerReply;
+function Round() {
 function playRound() {
 function getComputerValue()  {
 computerReply = ["Rock", "Paper", "Scissors"];
@@ -32,10 +34,10 @@ let r = "rock";
 let p = "paper";
 let s = "scissors";
  let human;
- let computer;
+ 
 
 
-let whyChoice = document.querySelector("#Why");
+
 
 function getBothChoices(humanChoice, computerChoice) {
   humanReply = prompt("Rock,Paper,Scissors", " ");
@@ -73,14 +75,7 @@ function getBothChoices(humanChoice, computerChoice) {
     computerScore+=1;
     let computerUpdate = document.querySelector("#cScore");
     computerUpdate.innerHTML = computerScore;
-    if(computerReply == r) {
-      whyChoice.innerHTML =  "You lost rock beats scissors";
-    } else if(computerReply == p) {
-      whyChoice.innerHTML =  "You lost paper beats rock";
-    } else {
-      whyChoice.innerHTML =  "You lost scissors beats paper";
-      
-    }
+  
   }
    
   if(human === "draw") {
@@ -100,6 +95,21 @@ function getBothChoices(humanChoice, computerChoice) {
 }
 getBothChoices();
 }
+playRound();
+playRound();
+playRound();
+playRound();
+playRound();
+
+if(computerScore > humanScore) {
+  whyChoice.innerHTML = "Computer Wins!";
+} else if(computerScore < humanScore) {
+  whyChoice.innerHTML = `"${userName} Wins!"`;
+} else {
+  whyChoice.innerHTML = `"It is a draw"`;
+}
+}
+
 
 }
   else {
